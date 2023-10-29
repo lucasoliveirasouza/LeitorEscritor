@@ -12,7 +12,7 @@ public class Escritor  extends Thread{
 	public void run (){
 			comecaEscrita();
 			try {
-				sleep((int) Math.random() * 100);
+				sleep(100);
 			} catch (InterruptedException e) {
 				System.out.print("Dormi demais");
 			}
