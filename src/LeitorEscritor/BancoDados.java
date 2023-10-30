@@ -39,7 +39,7 @@ public class BancoDados {
 				System.out.print("Esperei demais");
 			}
 		}
-		escritor_esperando--;
+		
 		qtd_escritor++;
 		System.out.println("Escritor " + escritor + " está escrevendo");
 		
@@ -50,6 +50,7 @@ public class BancoDados {
 		System.out.println("Escritor " + escritor + " parou de escrever");
 		
 		notifyAll();
+		escritor_esperando--;
 		
 	}
 
